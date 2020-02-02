@@ -1,0 +1,40 @@
+#!/bin/bash
+
+case $1
+	list_files)
+		command
+	break
+	hash_files)
+		command
+	break
+	inode_files)
+		command
+	break
+	attr_files)
+		command
+	break
+	perm_files)
+		command
+	break
+	owner_files)
+		command
+	break
+	group_files)
+		command
+	break
+	size_files)
+		command
+	break
+	date_files)
+		command
+	break
+	type_files)
+		command
+	break
+	to_shadow_files)
+		command
+	break
+	init_enviroment)
+		command
+	break
+esac

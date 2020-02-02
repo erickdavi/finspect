@@ -1,0 +1,4 @@
+WORKDIR=$HOME/.finspect
+DATADIR=$WORKDIR/data
+SHADOWDIR=$WORKDIR/shadowcopy
+

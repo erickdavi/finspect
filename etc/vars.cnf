@@ -1,0 +1,7 @@
+APPDIR=/home/epessanha/Documentos/finspect
+ETCDIR=$APPDIR/etc
+LOGDIR=$APPDIR/log
+TMPDIR=$APPDIR/tmp
+LIBDIR=$APPDIR/lib
+FSTATIC=$ETCDIR/modelcreated
+#MODELCREATED=$(cat $FSTATIC)
