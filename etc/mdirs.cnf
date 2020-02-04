@@ -1,4 +1,4 @@
-MONITORED_DIRS[0]="/etc/network"
-MONITORED_DIRS[1]="/etc/apt"
-MONITORED_DIRS[2]="/etc/cron.d"
-MONITORED_DIRS[3]="/etc/pam.d"
+MONITORED_DIRS[0]="/etc/"
+#MONITORED_DIRS[1]="/etc/apt"
+#MONITORED_DIRS[2]="/etc/cron.d"
+#MONITORED_DIRS[3]="/etc/pam.d"
