@@ -133,17 +133,19 @@ function to_shadow_files(){
 
 #Coleta e organiza as informacoes de um arquivo
 function data_file_collector(){
-   HASH=$(hash_files $1)
-   INODE=$(inode_files $1)
-   #ATTR=$(attr_files $1)
-   PERM=$(perm_files $1)
-   OWNER=$(owner_files $1)
-   GRP_OWN=$(group_files $1)
-   SIZE=$(size_files $1)
-   DATE=$(date_files $1)
-   TYPE=$(type_files $1)
-
-   echo "$1,$HASH,$INODE,$PERM,$OWNER,$GRP_OWN,$SIZE,$DATE,$TYPE"
-
+   if [ -n $1 -a -f $1 ]; then
+      HASH=$(hash_files $1)
+      INODE=$(inode_files $1)
+      #ATTR=$(attr_files $1)
+      PERM=$(perm_files $1)
+      OWNER=$(owner_files $1)
+      GRP_OWN=$(group_files $1)
+      SIZE=$(size_files $1)
+      DATE=$(date_files $1)
+      TYPE=$(type_files $1)
+      echo "$1,$HASH,$INODE,$PERM,$OWNER,$GRP_OWN,$SIZE,$DATE,$TYPE"
+   else
+      echo "$1,null,null,null,null,null,null,null,null"
+   fi
 }
 
